@@ -1,0 +1,185 @@
+:root{
+    --color-amarillo:#ff9c00;
+}
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    font-family: "Work Sans", sans-serif;
+}
+header{
+    background-image: url("../img/home-hero-free-img.jpg");
+    background-repeat: no-repeat;
+    background-size:120% 120%;
+    background-position-x:50%;
+    background-position-y:50%;
+   
+
+}
+#fondo-menu-superior{
+    /* background-image: url("../img/fondo-1.png"); */
+    /* background-repeat: repeat-y; */
+display: none;
+    /* background-repeat: repeat-x; */
+/* background-size: contain; */
+    /* background-position:; */
+        /* margin: 0; */
+}
+#menu-superior{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+ 
+    
+}
+
+#menu-principal li{
+    display: inline;
+    padding: 0 10px;
+    
+}
+#menu-principal .menu-li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+    
+}
+#menu-principal .menu-li a:hover{
+    color: #ff9c00;
+    font-weight: 600;
+    
+}
+.boton-descargar a{
+    text-decoration: none;
+    color: rgb(250, 249, 249);
+    background-color: #ff9c00;
+    padding: 10px;
+    border-radius: 12px;
+}
+.boton-descargar a:hover{
+    background-color: #6c00ff;
+    color: #ffffff;
+    padding: 10px;
+}
+#elemento-texto-heroe{
+    display: flex; 
+    flex-direction: row;
+    justify-content:left;
+}
+h1,h2,h3{
+    font-family: "Changa One", display;
+}
+#elemento-texto{
+   
+    width: 50%;
+    margin: 180px 0 100px 50px;
+    
+    /* width: 45%;
+    margin: 80px 0 100px 100px; */
+
+}
+#elemento-texto p{
+    font-size: 1em;
+    color: #ffffff;
+    padding-bottom: 20px;
+    
+}
+#elemento-texto h1{
+    font-size: 4.5em;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 40px 0;
+}
+
+#elemento-texto h2{
+    font-size: 52px;
+    color: var(--color-amarillo);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/*  */
+.contenedor-mas-informacion{
+ background-color: #ffffff;
+ /* height: 100vh; */
+ height: auto;
+ width: 90%;
+ display: flex;
+ align-items: center;
+ padding: 10% 0 10% 10%;
+
+}
+.informacion-about{
+    width: 100%;
+    margin: 0 5%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 30px; */
+}
+.informacion-about h3{
+font-size: 25px;
+}
+.informacion-about p{
+    font-size: 16px;
+    }
+    
+.informacion-about h2{
+    font-size: 3rem;
+    margin: 20px 0;
+    /* height: 30px; */
+    /* flex-basis: 5vw; */
+
+    }
+#boton-saber-mas{
+    margin-top: 50px;
+}
+
+#boton-saber-mas a{
+    padding: 15px;
+}
+@media  (width<900px) {
+    header{
+        background-size:cover;
+    }
+    header #menu-superior{
+        /* display: block; */
+        display: none;
+    }
+    #menu-principal{
+        display: none;
+    }
+    #menu-principal .boton-descargar{
+        display:none;
+    }
+    #elemento-texto{
+        width: 100%;
+    }
+    #fondo-menu-superior{
+        background-color: #ffffff;
+        display: block;
+        /* background-image: none; */
+
+    }
+    /*  */
+    .contenedor-mas-informacion{
+        flex-direction: column;
+    }
+    .imagen-perrito-mas-info{
+        height: 270px;
+        width: 200px;
+
+    }
+    .informacion-about h2{
+        font-size: 2rem;
+    }
+    .informacion-about{
+        text-align: center;
+    }
+}
