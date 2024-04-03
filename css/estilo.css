@@ -6,15 +6,20 @@
     padding: 0;
    
 }
+.imagen-celular{
+    height: 700px;
+    width: 500px;
+}
 body{
     font-family: "Work Sans", sans-serif;
 }
 header{
-    background-image: url("../img/home-hero-free-img.jpg");
+    background-image: url("../img/perrito-pequenio.jpg");
     background-repeat: no-repeat;
-    background-size:120% 120%;
+    background-size:110% 110%;
     background-position-x:50%;
     background-position-y:50%;
+    /* background-size: cover; */
    
 
 }
@@ -62,6 +67,7 @@ display: none;
     background-color: #ff9c00;
     padding: 10px;
     border-radius: 12px;
+    
 }
 .boton-descargar a:hover{
     background-color: #6c00ff;
@@ -72,6 +78,10 @@ display: none;
     display: flex; 
     flex-direction: row;
     justify-content:left;
+}
+.boton-secundario a{
+    padding: 20px;
+    /* height: 0px; */
 }
 h1,h2,h3{
     font-family: "Changa One", display;
@@ -113,11 +123,47 @@ h1,h2,h3{
  width: 90%;
  display: flex;
  align-items: center;
- padding: 10% 0 10% 10%;
+ padding: 10% 0 10% 5%;
 
 }
+.contenedor-localizacion{
+    display: block;
+    /* flex-direction: column; */
+    /* text-align: center; */
+}
+.contendor-principal-localizacion{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    height: auto;
+    width: 90%;
+ /* padding: 10% 0 10% 5%; */
+
+    /* justify-content: space-between; */
+}
+.icono-localizacion{
+    height: 10%;
+    width: 10%;
+    /* padding: 20px 0; */
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    height: 200px;
+    /* padding-left: 5%; */
+    /* text-align: left; */
+}
+.imagen-nina{
+    height: 400px;
+    width: 400px;
+    padding-top: 20px;
+
+}
+
 .informacion-about{
-    width: 100%;
+    width: 50%;
     margin: 0 5%;
     /* display: flex; */
     /* flex-direction: column; */
@@ -137,12 +183,28 @@ font-size: 25px;
     /* flex-basis: 5vw; */
 
     }
+    .boton-descargar{
+        /* gap: 15px; */
+        /* margin-right: 15%; */
+    }
 #boton-saber-mas{
-    margin-top: 50px;
+    margin: 50px 0;
+    /* width: 200px; */
 }
 
 #boton-saber-mas a{
     padding: 15px;
+}
+.informacion-localizacion{
+    width: 100%;
+}
+.contenedor-loc{
+    flex-direction:row-reverse; width: auto;
+    justify-content: flex-end;
+}
+.imagen-localizacion{
+    height:100px;
+     width:100px;
 }
 @media  (width<900px) {
     header{
@@ -170,6 +232,7 @@ font-size: 25px;
     /*  */
     .contenedor-mas-informacion{
         flex-direction: column;
+        /* justify-content: center; */
     }
     .imagen-perrito-mas-info{
         height: 270px;
@@ -181,5 +244,27 @@ font-size: 25px;
     }
     .informacion-about{
         text-align: center;
+        margin: 0;
+    }
+
+    /*  */
+    .contendor-principal-localizacion{
+        /* align-items: center; */
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .informacion-localizacion{
+        /* width: 90%; */
+
+    }
+    .botones{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+
+
+    }
+    .contenedor-loc{
+        flex-direction: column-reverse;
     }
 }
