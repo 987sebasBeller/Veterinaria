@@ -227,7 +227,11 @@ font-size: 25px;
     flex-basis: 200px; height: 300px; padding: 20px
 }
 .boton-desplegar{
-    width: 5%; background-color: var(--color-amarillo); text-align: center; padding: 2%;
+    width: 5%;
+     background-color: var(--color-amarillo); 
+     text-align: center;
+      padding: 2%;
+      height: 5%;
     
 
 }
@@ -239,6 +243,7 @@ font-size: 25px;
     cursor: pointer;
 }
 @media  (width<900px) {
+    
     .foto-encabezado{
         background-size:cover;
     }
@@ -256,14 +261,16 @@ font-size: 25px;
                  padding: 2%;
                  border-bottom: solid gray;
     }
+    #contenedor-encabezado{
 
+    }
     .menu-principal .menu-li a{
          color: gray;
     }
 
     #desplegable:checked ~ .menu-logo-texto .menu-pequenio li {
         display: block;
-        padding-left: 0%;
+        /* padding-left: 0%; */
     }
     .menu-principal .elemento-boton a{
         background-color: #ffffff;
