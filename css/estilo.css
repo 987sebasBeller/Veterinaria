@@ -40,6 +40,8 @@
 }
 body{
     font-family: "Work Sans", sans-serif;
+    /* overflow: hidden; */
+    /* height: 100vh; */
 }
 .foto-encabezado{
     background-image: url("../img/perrito-pequenio.jpg");
@@ -124,7 +126,11 @@ h1,h2,h3{
     font-weight: bold;
     padding-bottom: 20px;
 }
-
+#imagen-doggy{
+    height: auto;
+    width: 10%;
+    padding-left: 3%;
+}
 /*  */
 .contenedor{
  background-color: #ffffff;
@@ -267,21 +273,26 @@ font-size: 25px;
     .menu-principal .menu-li a{
          color: gray;
     }
-
+    .contenedor-footer {
+        flex-direction: column;
+   }
+   .contenedor-footer ul{
+    padding-bottom: 15%;
+   }
     #desplegable:checked ~ .menu-logo-texto .menu-pequenio li {
         display: block;
-        /* padding-left: 0%; */
     }
-    .menu-principal .elemento-boton a{
-        background-color: #ffffff;
-        color: gray;
+    .menu-principal .elemento-boton {
+       margin: 2% 0%;
+       border-bottom: none;
     }
     #elemento-texto{
         width: 100%;
     }
+    /* }
     #boton-descargar-app{
         display: none;
-    }
+    } */
     #fondo-menu-superior{
         background-color: #ffffff;
         display: block;
@@ -313,9 +324,6 @@ font-size: 25px;
         flex-direction: column;
 
 
-    }
-    .contenedor-inverso{
-        flex-direction: column-reverse;
     }
     
 
