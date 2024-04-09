@@ -10,78 +10,91 @@
     height: 700px;
     width: 500px;
 }
+.contenedor-flexible{
+    display: flex;
+    flex-direction: row;
+}
+.contenedor-flexible-columnas{
+    flex-direction: column;
+}
+.contenedor-flexible-inverso-eje-prin{
+    flex-direction: row-reverse;
+}
+.contenedor-flexible-inverso-eje-sec{
+    flex-direction: column-reverse;
+}
+.contenedor-flexible-centro-eje-prin{
+    justify-content: center;
+}
+.contenedor-flexible-centro-eje-sec{
+    align-items: center;
+}
+.contenedor-flexible-espacio-eje-prin{
+    justify-content: space-between;
+}
+.contenedor-flexible-espacio-eje-sec{
+    align-items: space-between;
+}
+.contenedor-flexible-wrap{
+    flex-wrap: wrap;
+}
 body{
     font-family: "Work Sans", sans-serif;
 }
-header{
+.foto-encabezado{
     background-image: url("../img/perrito-pequenio.jpg");
     background-repeat: no-repeat;
     background-size:110% 110%;
     background-position-x:50%;
     background-position-y:50%;
-    /* background-size: cover; */
-   
-
 }
 #fondo-menu-superior{
-    /* background-image: url("../img/fondo-1.png"); */
-    /* background-repeat: repeat-y; */
 display: none;
-    /* background-repeat: repeat-x; */
-/* background-size: contain; */
-    /* background-position:; */
-        /* margin: 0; */
 }
-#menu-superior{
+.menu-superior{
     width: 90%;
     margin: 0 auto;
-    display: flex;
-    justify-content:space-between;
-    flex-direction: row;
-    align-items: center;
     padding: 10px;
- 
-    
 }
 
-#menu-principal li{
+.menu-principal li{
     display: inline;
     padding: 0 10px;
     
 }
-#menu-principal .menu-li a{
+.menu-principal .menu-li a{
     text-decoration: none;
     font-weight: 600;
     color: rgb(255, 255, 255);
 
     
 }
-#menu-principal .menu-li a:hover{
+.menu-principal .menu-li a:hover{
     color: #ff9c00;
     font-weight: 600;
     
 }
-.boton-descargar a{
+.elemento-boton a{
     text-decoration: none;
     color: rgb(250, 249, 249);
     background-color: #ff9c00;
-    padding: 10px;
+    padding: 15px;
     border-radius: 12px;
-    
+    margin: 50px 0;
 }
-.boton-descargar a:hover{
+#boton-descargar-app a{
+    padding: 10px;
+
+}
+.elemento-boton a:hover{
     background-color: #6c00ff;
     color: #ffffff;
-    padding: 10px;
 }
 #elemento-texto-heroe{
-    display: flex; 
-    flex-direction: row;
     justify-content:left;
 }
 .boton-secundario a{
     padding: 20px;
-    /* height: 0px; */
 }
 h1,h2,h3{
     font-family: "Changa One", display;
@@ -90,9 +103,6 @@ h1,h2,h3{
    
     width: 50%;
     margin: 180px 0 100px 50px;
-    
-    /* width: 45%;
-    margin: 80px 0 100px 100px; */
 
 }
 #elemento-texto p{
@@ -116,45 +126,13 @@ h1,h2,h3{
 }
 
 /*  */
-.contenedor-mas-informacion{
+.contenedor{
  background-color: #ffffff;
- /* height: 100vh; */
  height: auto;
  width: 90%;
- display: flex;
- align-items: center;
  padding: 10% 0 10% 5%;
+}
 
-}
-.contenedor-localizacion{
-    display: block;
-    /* flex-direction: column; */
-    /* text-align: center; */
-}
-.contendor-principal-localizacion{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    height: auto;
-    width: 90%;
- /* padding: 10% 0 10% 5%; */
-
-    /* justify-content: space-between; */
-}
-.icono-localizacion{
-    height: 10%;
-    width: 10%;
-    /* padding: 20px 0; */
-}
-.botones{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 50%;
-    height: 200px;
-    /* padding-left: 5%; */
-    /* text-align: left; */
-}
 .imagen-nina{
     height: 400px;
     width: 400px;
@@ -162,101 +140,166 @@ h1,h2,h3{
 
 }
 
-.informacion-about{
+.contenedor-informacion{
     width: 50%;
     margin: 0 5%;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* gap: 30px; */
 }
-.informacion-about h3{
+.contenedor-informacion h3{
 font-size: 25px;
 }
-.informacion-about p{
+.contenedor-informacion p{
     font-size: 16px;
     }
     
-.informacion-about h2{
+.contenedor-informacion h2{
     font-size: 3rem;
     margin: 20px 0;
-    /* height: 30px; */
-    /* flex-basis: 5vw; */
 
     }
-    .boton-descargar{
-        /* gap: 15px; */
-        /* margin-right: 15%; */
-    }
+
 #boton-saber-mas{
     margin: 50px 0;
-    /* width: 200px; */
 }
 
 #boton-saber-mas a{
     padding: 15px;
 }
-.informacion-localizacion{
-    width: 100%;
-}
-.contenedor-loc{
-    flex-direction:row-reverse; width: auto;
+.contenedor-inverso{
     justify-content: flex-end;
 }
 .imagen-localizacion{
     height:100px;
      width:100px;
 }
+.imagen-targeta-servicios h2{
+    padding-top: 15px
+}
+.imagen-targeta-servicios{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.targeta-clientes{
+    margin: 1%;
+    flex-basis: 300px;
+    height: 250px;
+    padding: 20px;
+    box-shadow: 0 10px 40px -10px rgba(84, 89, 95, 0.5);
+    border-radius: 5px;
+    background-image: url("../img/quotes-free-img.png");
+    background-size: auto;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: #ffffff;
+}
+.contenedor-clientes{
+    width: 100%;
+    padding-left: 0%;
+}
+.contenedor-footer{
+    padding: 40px;
+}
+.imagen-logo-footer{
+    height: 80px;
+    width: auto;
+}
+.texto-footer{
+    padding: 5%;
+}
+
+.imagen-cliente{
+    height: 30%; width: 25%; margin: 10px;
+}
+.targeta-referencia{
+    padding-top: 5%
+}
+.boton-ver-mas a{
+    background-color: transparent; color: black; padding: 0;
+}
+.contenedor-footer .menu-principal a{
+    color: black;
+}
+.targeta-servicio{
+    flex-basis: 200px; height: 300px; padding: 20px
+}
+.boton-desplegar{
+    width: 5%; background-color: var(--color-amarillo); text-align: center; padding: 2%;
+    
+
+}
+#desplegable{
+    display: none;
+ 
+}
+.boton-desplegar{
+    cursor: pointer;
+}
 @media  (width<900px) {
-    header{
+    .foto-encabezado{
         background-size:cover;
     }
-    header #menu-superior{
-        /* display: block; */
+    .foto-encabezado .menu-superior{
         display: none;
+        
     }
-    #menu-principal{
+    .menu-superior{
+        flex-direction: column;
+        width: auto;
+    }
+    .menu-pequenio li{
         display: none;
+        text-align: left;
+                 padding: 2%;
+                 border-bottom: solid gray;
     }
-    #menu-principal .boton-descargar{
-        display:none;
+
+    .menu-principal .menu-li a{
+         color: gray;
+    }
+
+    #desplegable:checked ~ .menu-logo-texto .menu-pequenio li {
+        display: block;
+        padding-left: 0%;
+    }
+    .menu-principal .elemento-boton a{
+        background-color: #ffffff;
+        color: gray;
     }
     #elemento-texto{
         width: 100%;
     }
+    #boton-descargar-app{
+        display: none;
+    }
     #fondo-menu-superior{
         background-color: #ffffff;
         display: block;
-        /* background-image: none; */
 
     }
     /*  */
-    .contenedor-mas-informacion{
+    .contenedor{
         flex-direction: column;
-        /* justify-content: center; */
     }
-    .imagen-perrito-mas-info{
+    .contenedor-imagen{
         height: 270px;
         width: 200px;
 
     }
-    .informacion-about h2{
+    .contenedor-informacion h2{
         font-size: 2rem;
     }
-    .informacion-about{
+    .contenedor-informacion{
         text-align: center;
         margin: 0;
     }
 
     /*  */
-    .contendor-principal-localizacion{
-        /* align-items: center; */
-        flex-direction: column;
-        /* width: 100%; */
-    }
-    .informacion-localizacion{
-        /* width: 90%; */
-
-    }
+ 
+   
     .botones{
         width: 100%;
         align-items: center;
@@ -264,7 +307,20 @@ font-size: 25px;
 
 
     }
-    .contenedor-loc{
+    .contenedor-inverso{
         flex-direction: column-reverse;
     }
+    
+
+   .contenedor-flexible-espacio{
+    flex-direction: column;
+    align-items: center;
+   }
+   .contenedor-clientes{
+    align-items: center;
+   }
+   .targeta-clientes{
+    width: 50%;
+
+   }
 }
