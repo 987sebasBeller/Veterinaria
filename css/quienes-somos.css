@@ -1,0 +1,49 @@
+.menu-principal .menu-li a{
+    color: gray;
+}
+.foto-encabezado{
+    background-image: none;
+}
+#elemento-texto h1{
+    color: black;
+    padding: 10% 0;
+
+}
+#elemento-texto{
+    margin: 5%;
+    width: auto;
+}
+#elemento-texto .texto-quienes-somos p{
+    color: black;
+    padding-top: 5%;
+
+}
+.texto-info h3{
+    font-size: 1.7em;
+}
+.texto-info h3{
+    padding: 5% 0%;
+
+}
+.negro{
+    color: black;
+}
+#elemento-texto .texto-info p{
+    color: black;
+    /* padding-top: 5%; */
+}
+#contendor-fundadores h2{
+    color: black;
+}
+#imagen-fundadores{
+    width: 100%;
+}
+.texto-imagen{
+    padding:0% 5%;
+}
+
+@media  (width<900px) {
+    .contenedor-info-quienes-somos{
+        flex-direction: column;
+    }
+}
