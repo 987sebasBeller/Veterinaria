@@ -7,8 +7,45 @@
    
 }
 .imagen-celular{
-    height: 700px;
+    height: auto;
     width: 500px;
+    position: relative;
+    animation-name: efecto-celular;
+    animation-duration: 1s;
+    z-index: 1;
+}
+@keyframes efecto-celular{
+    0%  {top:100px;}
+    75% {top:0px;}
+    100% {top:0px;}
+}
+.fondo-contendor-redes-sociales{
+    
+    background-image: url("../img/feature-img2-free-img.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    top: -80px;
+    height: 100px;
+    z-index: 2;
+}
+
+
+
+.fondo-morado-redes-sociales{
+    background-color: rgba(38, 26, 53, 0.7);
+    height: 100px;
+    text-align: center;
+}
+.fondo-morado-redes-sociales p{
+    position: relative;
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+    
+    
 }
 .contenedor-flexible{
     display: flex;
@@ -40,15 +77,26 @@
 }
 body{
     font-family: "Work Sans", sans-serif;
-    /* overflow: hidden; */
-    /* height: 100vh; */
 }
 .foto-encabezado{
     background-image: url("../img/perrito-pequenio.jpg");
     background-repeat: no-repeat;
     background-size:110% 110%;
-    background-position-x:50%;
-    background-position-y:50%;
+    background-position: center center;
+}
+.targeta-clientes{
+    margin: 1%;
+    flex-basis: 300px;
+    height: 250px;
+    padding: 20px;
+    box-shadow:0px 0px 40px  rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-image: url("../img/quotes-free-img.png");
+    background-size: auto;
+    background-position:center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: #ffffff;
 }
 #fondo-menu-superior{
 display: none;
@@ -102,10 +150,8 @@ h1,h2,h3{
     font-family: "Changa One", display;
 }
 #elemento-texto{
-   
     width: 50%;
     margin: 180px 0 100px 50px;
-
 }
 #elemento-texto p{
     font-size: 1em;
@@ -140,8 +186,8 @@ h1,h2,h3{
 }
 
 .imagen-nina{
-    height: 400px;
-    width: 400px;
+    height: auto;
+    width: 50%;
     padding-top: 20px;
 
 }
@@ -187,21 +233,7 @@ font-size: 25px;
     background-size: contain;
     background-repeat: no-repeat;
 }
-.targeta-clientes{
-    margin: 1%;
-    flex-basis: 300px;
-    height: 250px;
-    padding: 20px;
-    box-shadow: 0 10px 40px -10px rgba(84, 89, 95, 0.5);
-    border-radius: 5px;
-    background-image: url("../img/quotes-free-img.png");
-    background-size: auto;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    text-align: center;
-    background-color: #ffffff;
-}
+
 .contenedor-clientes{
     width: 100%;
     padding-left: 0%;
@@ -249,30 +281,46 @@ font-size: 25px;
     cursor: pointer;
 }
 @media  (width<900px) {
-    
+   
+    .contenedor-flexible{
+        flex-direction: column;
+    }
+
+
+    .texto-footer {
+        flex-direction: row;
+   }
+   .contendor-celular{
+    flex-direction:column-reverse;
+    }
+    .contenedor-menu-desplegable-flexible{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .contenedor-flexible-espacio{
+        align-items: center;
+    } 
     .foto-encabezado{
         background-size:cover;
     }
     .foto-encabezado .menu-superior{
         display: none;
-        
     }
-    .menu-superior{
-        flex-direction: column;
-        width: auto;
+    #elemento-texto h1{
+        font-size: 3em;
     }
+    
+    
     .menu-pequenio li{
         display: none;
         text-align: left;
-                 padding: 2%;
-                 border-bottom: solid gray;
+        padding: 2%;
+        border-bottom: solid gray;
     }
     .menu-principal .menu-li a{
          color: gray;
     }
-    .contenedor-footer {
-        flex-direction: column;
-   }
    .contenedor-footer ul{
     padding-bottom: 15%;
    }
@@ -288,10 +336,8 @@ font-size: 25px;
         display: block;
 
     }
-    /*  */
-    .contenedor{
-        flex-direction: column;
-    }
+
+  
     .contenedor-imagen{
         height: 270px;
         width: 200px;
@@ -306,26 +352,6 @@ font-size: 25px;
     }
 
     /*  */
- 
-   
-    .botones{
-        width: 100%;
-        align-items: center;
-        flex-direction: column;
-
-
-    }
-    
-    /* .contenedor-flexible{
-        flex-direction: column;
-       } */
-   .contenedor-flexible-espacio{
-    flex-direction: column;
-    align-items: center;
-   }
-   .contenedor-clientes{
-    align-items: center;
-   }
    .targeta-clientes{
     width: 50%;
 
