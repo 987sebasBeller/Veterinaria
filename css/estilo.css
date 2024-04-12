@@ -44,9 +44,9 @@ p{
 .fondo-morado-redes-sociales {
   background-color: rgba(38, 26, 53, 0.7);
   height: 100px;
-  text-align: center;
 }
 .fondo-morado-redes-sociales p {
+  text-align: center;
   position: relative;
   padding-top: 20px;
   color: white;
@@ -100,8 +100,12 @@ body {
   background-size: auto;
   background-position: center center;
   background-repeat: no-repeat;
-  text-align: center;
   background-color: #ffffff;
+  text-align: center;
+
+}
+.targeta-clientes p{
+  text-align: center;
 }
 #fondo-menu-superior {
   display: none;

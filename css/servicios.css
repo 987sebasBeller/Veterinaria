@@ -86,8 +86,6 @@ h1 {
     height: 100vh;
     display: none;
     
-  
-  /* animation: grow 9s linear infinite; */
 
 }
 .boton-modal {
@@ -135,7 +133,14 @@ h1 {
   cursor: pointer;
   
 }
-.checkbox-fa:checked + p{
+.checkbox-fa ~ h4 span label::after{
+  content: "+";
+}
+.checkbox-fa:checked ~ h4 span label::after{
+  content: "-";
+  color: #6c00ff;
+}
+.checkbox-fa:checked ~ p{
   display: block;
 }
 .checkbox-fa{
