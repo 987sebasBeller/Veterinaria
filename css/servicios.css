@@ -118,6 +118,34 @@ h1 {
   display: none;
 }
 
+.targetas{
+  width: 60%;
+}
+.targeta-preguntas{
+  margin:0 0 5% 0;
+  padding: 3%;
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+.targeta-preguntas p{
+  padding: 7% 0;
+  text-align:justify;
+  display: none;
+}
+.boton-fa-desplegable{
+  color: #ff9c00;
+  font-size: 1.5em;
+  padding-left: 8%;
+  cursor: pointer;
+  
+}
+.checkbox-fa:checked + p{
+  display: block;
+}
+.checkbox-fa{
+  display: none;
+}
+
 @media (max-width: 900px) {
   .video-perrito {
     height: 300px;
