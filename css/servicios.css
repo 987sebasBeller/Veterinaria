@@ -65,18 +65,14 @@ h1 {
   font-size: 38px;
 }
 .iframe-perrito{
-
- 
   animation: grow 6s ;
-  
-  
 }
 @keyframes grow {
   0%{
     transform: scale(0.1);
   }
   100%{
-    transform: scale(1.1);
+    transform: scale(1);
   }
   
 }
