@@ -30,7 +30,7 @@ p{
   }
 }
 .fondo-contendor-redes-sociales {
-  background-image: url("../img/feature-img2-free-img.jpg");
+  background-image: url("../img/feature-img2-free-img.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,7 +84,7 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 .foto-encabezado {
-  background-image: url("../img/perrito-pequenio.jpg");
+  background-image: url("../img/perrito-pequenio.webp");
   background-repeat: no-repeat;
   background-size: 110% 110%;
   background-position: center center;
@@ -96,7 +96,7 @@ body {
   padding: 20px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  background-image: url("../img/quotes-free-img.png");
+  background-image: url("../img/quotes-free-img.webp");
   background-size: auto;
   background-position: center center;
   background-repeat: no-repeat;
