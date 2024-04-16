@@ -14,16 +14,12 @@ p{
   height: auto;
   width: 400px;
   position: relative;
-  animation-name: efecto-celular;
-  animation-duration: 4s;
+  animation: efecto-celular 5s;
   z-index: 1;
 }
 @keyframes efecto-celular {
   0% {
     top: 100px;
-  }
-  75% {
-    top: 0px;
   }
   100% {
     top: 0px;
